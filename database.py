@@ -31,7 +31,7 @@ def add_form(conn, user_id,searh_id):
         return ("Запись добавлена")
 
 
-with psycopg2.connect(database="kozlova", user="postgres", password="1una}{od") as conn:
+with psycopg2.connect(database="", user="postgres", password="") as conn:
     with conn.cursor() as cur:
         create_db(conn)
 
